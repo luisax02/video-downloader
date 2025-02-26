@@ -1,9 +1,28 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Mi página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <header>
+        <h1>Descargar Videos</h1>
+        <p>Introduce la URL del video para descargarlo.</p>
+    </header>
+    <main>
+        <form id="downloadForm">
+            <input type="text" id="videoUrl" placeholder="Introduce la URL del video" required>
+            <button type="submit">Descargar</button>
+        </form>
+        <div id="downloadLinkContainer" style="display:none;">
+            <a id="downloadLink" href="" download>Haz clic aquí para descargar el video</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Video Downloader</p>
+    </footer>
+    <script src="script.js"></script> <!-- Enlace al archivo de JavaScript -->
 </body>
 </html>
